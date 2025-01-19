@@ -54,7 +54,7 @@ bot.command("random", async (context) => {
   }
 });
 
-bot.command("suspinho", (context) => {
+bot.command("eeeh_eeeh", (context) => {
   context.replyWithPhoto(
     { source: "./st,small,507x507-pad,600x600,f8f8f8.jpg" },
     { caption: "Heee heeee!" }
