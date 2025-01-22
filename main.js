@@ -79,3 +79,13 @@ bot.command("miao", (context) => {
 
 
 bot.launch();
+
+const port = process.env.PORT || 3000;
+http
+  .createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Bot Telegram è in esecuzione!\n");
+  })
+  .listen(port, () => {
+    console.log(`Server HTTP in ascolto sulla porta ${port}`);
+  });
